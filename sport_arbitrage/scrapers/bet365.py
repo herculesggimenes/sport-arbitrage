@@ -4,7 +4,7 @@ from time import sleep
 import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 
-from models.three_way_book_order import ThreeWayBookOrder
+from sport_arbitrage.models import ThreeWayBookOrder
 
 BOOK_MAKER = "BET365"
 SPORT= "SOCCER"

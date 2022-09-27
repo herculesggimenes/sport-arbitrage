@@ -1,13 +1,15 @@
 [tool.poetry]
-name = "sport-arbitrage"
+name = "sport_arbitrage"
 version = "0.1.0"
 description = ""
 authors = ["herculesgimenes"]
 readme = "README.md"
-packages = [{include = "sport-arbitrage"}]
+packages = [{include = "sport_arbitrage"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+undetected-chromedriver = "^3.1.5.post4"
+selenium = "^4.4.3"
 
 
 [build-system]
