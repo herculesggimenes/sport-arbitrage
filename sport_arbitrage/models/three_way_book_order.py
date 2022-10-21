@@ -21,6 +21,6 @@ class ThreeWayBookOrder:
     tie_odds:Decimal
 
     def __hash__(self):
-        return (
+        return hash(
                 self.book_maker_name + self.sport + self.league
                 + self.series + self.first_team_name + self.second_team_name + self.reference_date.isoformat())
