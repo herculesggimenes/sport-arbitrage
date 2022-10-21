@@ -6,17 +6,17 @@ from selenium.webdriver.common.by import By
 import pytz
 from sport_arbitrage.models import ThreeWayBookOrder
 
-BOOK_MAKER = "BET365"
+BOOK_MAKER = "GALERABET"
 SPORT= "SOCCER"
 LEAGUE="BRASILEIRAO"
 SERIES="SERIE B"
-BET365_URL = 'https://www.bet365.com/#/AC/B1/C1/D1002/E73179377/G40/H^1/'
+GALERABET_URL="https://sport.galera.bet/pre-jogo#/Soccer/Brazil/3104/20914001"
 if __name__ == '__main__':
     odds_query = f"//div[contains(@class, 'gl-Participant_General')]/span[@class='sgl-ParticipantOddsOnly80_Odds']"
     names_query = f"//div[contains(@class,'rcl-ParticipantFixtureDetailsTeam_TeamName')]"
     dates_query = f"//div[@contains(@class,'rcl-MarketHeaderLabel-isdate')]/"
     driver = uc.Chrome()
-    driver.get(BET365_URL)
+    driver.get(GALERABET_URL)
     while driver.find_elements(By.XPATH,"//div[contains(@class,'bl-Preloader')]"):
         driver.refresh()
         sleep(2)

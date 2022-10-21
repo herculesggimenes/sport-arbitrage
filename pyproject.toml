@@ -7,9 +7,10 @@ readme = "README.md"
 packages = [{include = "sport_arbitrage"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9"
 undetected-chromedriver = "^3.1.5.post4"
 selenium = "^4.4.3"
+pytz = "^2022.5"
 
 
 [build-system]

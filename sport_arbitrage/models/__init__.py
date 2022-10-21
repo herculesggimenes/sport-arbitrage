@@ -1,1 +1,1 @@
-from three_way_book_order import ThreeWayBookOrder
+from .three_way_book_order import ThreeWayBookOrder
